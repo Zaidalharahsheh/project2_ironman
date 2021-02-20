@@ -1,0 +1,20 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+h2  {
+font-size: bold;
+
+font-family: ‘Akaya Kanadaka’, cursive;
+
+}
+
+.row {
+
+margin-left: -600px;
+margin-top: 200px;
+
+}
+#img1 {
+float: right;
+}
