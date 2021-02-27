@@ -1,0 +1,85 @@
+ {{!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture15419130291147.png" width="80" height="80" class="d-inline-block align-top" alt="">
+    
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav"> 
+          <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> --> 
+          <a class="nav-link" href="login.html">Logout</a>
+          <a class="nav-link" href="#">Profile</a>
+          <a class="nav-link" href="#">About Us</a>
+    
+        
+        </div>
+      </div>
+    </div>
+  </nav> --}}
+  <hr>
+            
+                <div id="input" class="col-md-10">
+                    <div class="card" id="cards">
+                            <div class="card-body">
+                                <form class="create-form">
+                                    
+                                        <div class="input-group">
+                                            <div class="col">
+                                                <input type="text" id="Bg" class="form-control" placeholder="What are you thinking?"  id="newTodo">
+                                            </div>
+                                        </div>
+                                        <div>
+                                           <button type="submit" class="btn btn-danger" id="s-btn" >Submit</button>
+                                        </div>
+                                </form>
+                                
+                            </div>
+                    </div>
+
+                  <hr>
+                    <div class="container">
+                      <div class="row">
+                        
+                    <div class="card" id="cards" >
+                        <div class="card-header">
+                         <div class="media-block">
+                       <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" id="img"src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+                        </div>
+                        <ul class="list-group list-group-flush" id ="list">
+                          {{#each burgers}}
+                            {{#unless devoured}}
+                              <li class="list-group-item" id ="list">{{> burgers/burger-block devoured=true}}</li>
+                            {{/unless}}
+                          {{/each}}
+                        </ul>
+                      </div>
+                
+                     
+                <div class="card" id="cards" >
+                    <div class="card-header">
+                    
+                    </div>
+                      
+                    <ul class="list-group list-group-flush">
+                  
+                        {{#each burgers}}
+                            {{#if devoured}}
+                                <li class="list-group-item" id ="list">{{> burgers/burger-block devoured=false}}</li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                  </div>
+            
+                </div>
+                </div> 
+                </div>
+              
+
+                
+
+                </div>
+                
+       
