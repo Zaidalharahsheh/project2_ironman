@@ -53,11 +53,22 @@ module.exports = function (app) {
     db.Todo.findAll({}).then((dbTodo) => res.json(dbTodo));
   });
 
+  // DELETE route for deleting todos using the id (req.params.id)
+  app.get('/api/todos/:id', (req, res) => {
+    // We just have to specify which todo we want to destroy with "where"
+    db.Todo.findAll({
+      where: {
+        id: req.params.id,
+      },
+    }).then((dbTodo) => res.json(dbTodo));
+  });
+
   // POST route for saving a new todo
   app.post('/api/todos', (req, res) => {
     db.Todo.create({
       text: req.body.text,
       complete: req.body.complete,
+      userId: req.body.userId
     })
       .then((dbTodo) => res.json(dbTodo))
       .catch((err) => res.json(err));

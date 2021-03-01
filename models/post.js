@@ -6,13 +6,16 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       // "len" is a validation that checks that our todo is between 1 and 140 characters
       validate: {
-        len: [1, 140],
+        len: [1, 280],
       },
     },
     complete: {
       type: DataTypes.BOOLEAN,
       // "defaultValue" is a flag that defaults a new todos complete value to false if not supplied one
       defaultValue: false,
+    },
+    userId: {
+      type: DataTypes.INTEGER,
     },
   });
   return Todo;

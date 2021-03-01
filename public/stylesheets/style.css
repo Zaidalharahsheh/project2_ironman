@@ -6,7 +6,7 @@
 /*[ FONT SIZE ]
 ///////////////////////////////////////////////////////////
 */
-.
+
 
 /*[ SHAPE ]
 ///////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@
 -----------------------------------------------------------
 */
 .bgwhite {background-color: white;}
-.bgblack {background-color: black;}
+.bgblack {background-color: rgb(0, 0, 0);}
 
 
 
@@ -791,7 +791,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #57b846;
+  color: #bb9d3b;
 }
 
 /*---------------------------------------------*/
@@ -901,16 +901,22 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #9053c7;
+ 
+	background-image: url('https://www.excelsisdeo.com/images/AlphaTestersAnimation_60.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+
+  /* background: #9053c7;
   background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
   background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
   background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0); */
 }
 
 .wrap-login100 {
   width: 960px;
-  background: #fff;
+  background: rgba(4, 3, 41, 0);
   border-radius: 10px;
   overflow: hidden;
 
@@ -931,7 +937,7 @@ iframe {
 }
 
 .login100-pic img {
-  max-width: 100%;
+  max-width: 110%;
 }
 
 
@@ -944,7 +950,7 @@ iframe {
 .login100-form-title {
   font-family: Poppins-Bold;
   font-size: 24px;
-  color: #333333;
+  color: #926b22;
   line-height: 1.2;
   text-align: center;
 
@@ -989,7 +995,7 @@ iframe {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 0px 0px;
-  color: rgba(87,184,70, 0.8);
+  color: rgba(27, 24, 12, 0.8);
 }
 
 .input100:focus + .focus-input100 {
@@ -1028,7 +1034,7 @@ iframe {
   height: 100%;
   padding-left: 35px;
   pointer-events: none;
-  color: #666666;
+  color: #c4a03e;
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -1037,7 +1043,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-  color: #57b846;
+  color: #c9ae39;
   padding-left: 28px;
 }
 
@@ -1059,13 +1065,13 @@ iframe {
   font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
-  color: #fff;
+  color: #c9ae39;
   text-transform: uppercase;
 
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background: #57b846;
+  background: #3d3823;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1082,7 +1088,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background: #333333;
+  background: #313030;
 }
 
 
