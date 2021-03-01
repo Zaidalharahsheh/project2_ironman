@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
   const todoContainer = document.querySelector('.todo-container');
   const todoForm = document.getElementById('todo-form');
 
+  let userID = 0;
+
   // Inital todos array
   let todos = [];
 
@@ -32,6 +34,18 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // Helper function to grab todos
   const getTodos = () => {
+    fetch('/api/user_data', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('user:', data.id);
+        userID = data.id;
+      });
+
     fetch('/api/todos', {
       method: 'GET',
       headers: {
@@ -52,13 +66,27 @@ document.addEventListener('DOMContentLoaded', (e) => {
   const deleteTodo = (e) => {
     e.stopPropagation();
     const { id } = e.target.dataset;
-
     fetch(`/api/todos/${id}`, {
-      method: 'DELETE',
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
-    }).then(getTodos);
+    }).then((response) => response.json())
+    .then((data) => {
+      console.log('todo by id:', data[0]);
+      if (userID == data[0].userId) {
+        fetch(`/api/todos/${id}`, {
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }).then(getTodos);
+      } else {
+        console.log("not your post!!!");
+      }
+    });
+
+    
   };
 
   // Function to handle the editing of a todo when input is clicked
@@ -205,11 +233,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // Function to actually put the todo on the page
   const insertTodo = (e) => {
+    console.log("TESTING: " + userID);
     e.preventDefault();
     const todo = {
       text: document.getElementById('newTodo').value.trim(),
       complete: false,
+      userId: userID
     };
+
+    console.log("Test2: " + JSON.stringify(todo));
     if (todo.text) {
       fetch('/api/todos', {
         method: 'POST',

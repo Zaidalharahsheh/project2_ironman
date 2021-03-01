@@ -14,6 +14,9 @@ module.exports = (sequelize, DataTypes) => {
       // "defaultValue" is a flag that defaults a new todos complete value to false if not supplied one
       defaultValue: false,
     },
+    userId: {
+      type: DataTypes.INTEGER,
+    },
   });
   return Todo;
 };
