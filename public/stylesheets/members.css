@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * 
  
   
@@ -8,14 +7,6 @@
     font-size: 25pt;
    max-height: 100%;
 }
-=======
-* {
-    box-sizing: border-box;
-  }
-  body{
-    font-size: 24px;
-  }
->>>>>>> main
   
  
   
@@ -115,7 +106,6 @@
     height: 46px;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -125,7 +115,7 @@
 } */
 
 
-}
+
 .text-sm {
     font-size: 0.9em;
 }
@@ -167,8 +157,6 @@
     height: 25px;
     margin-left: 5px;
   }
-=======
->>>>>>> main
   .edit {
     width: 100%;
     height: 80%;
@@ -191,8 +179,7 @@
   } 
 
 
-<<<<<<< HEAD
-  }
+  
    .btn-info{
  
      margin-right: 0%;
@@ -202,8 +189,6 @@
      
    }
    
-=======
->>>>>>> main
 
 
    #cards{
