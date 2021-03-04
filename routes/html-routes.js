@@ -1,6 +1,6 @@
 // Requiring path to so we can use relative routes to our HTML files
 const path = require("path");
-
+var homeController = require("../controlers/about");
 // Requiring our custom middleware for checking if a user is logged in
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
@@ -35,5 +35,10 @@ module.exports = function (app) {
 
     if (req.user)
       res.sendFile(path.join(__dirname, "../public/members.html"));
+  });
+  app.get("/about",  (req, res) => {
+
+    if (req.user)
+      res.sendFile(path.join(__dirname, "../views/layout/main.handlebars"));
   });
 };

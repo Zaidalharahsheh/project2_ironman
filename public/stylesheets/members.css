@@ -23,7 +23,9 @@
     height: 400px;
 
   }
-
+.delete {
+  float: right;
+}
  #box{
     height: 300px;
     margin-top: 30px;
@@ -100,134 +102,18 @@
     border: 1px solid white;
   }
   
-  /* body{
-    margin-top:20px;
-    background:#ebeef0;
-    font-family: 'Alegreya', serif;
-} */
-/* man image */
+
 .img-sm {
     width: 46px;
     height: 46px;
 }
 
-/* .panel {
-    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
-    border-radius: 0;
-    border: 0;
-    margin-bottom: 15px;
-} */
-
-/* .panel .panel-footer, .panel>:last-child {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-} */
-
-/* .panel .panel-heading, .panel>:first-child {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-} */
-
-/* .panel-body {
-    padding: 25px 20px;
-    font-family: 'Alegreya', serif;
-} */
-
-
-/* .media-block .media-left {
-    display: block;
-    float: left
-} */
-
-/* .media-block .media-right {
-    float: right
-} */
-
-/* .media-block .media-body {
-    display: block;
-    overflow: hidden;
-    width: auto
-} */
-
-/* .middle .media-left,
-.middle .media-right,
-.middle .media-body {
-    vertical-align: middle
-} */
-
-/* .thumbnail {
-    border-radius: 0;
-    border-color: #e9e9e9
-} */
-/* 
-.tag.tag-sm, .btn-group-sm>.tag {
-    padding: 5px 10px;
-} */
-
-/* .tag:not(.label) {
-    background-color: #fff;
-    padding: 6px 12px;
-    border-radius: 2px;
-    border: 1px solid #cdd6e1;
-    font-size: 12px;
-    line-height: 1.42857;
-    vertical-align: middle;
-    -webkit-transition: all .15s;
-    transition: all .15s;
-} */
-/* .text-muted, a.text-muted:hover, a.text-muted:focus {
-    color: #acacac;
-}
-.text-sm {
-    font-size: 0.9em;
-}
-.text-5x, .text-4x, .text-5x, .text-2x, .text-lg, .text-sm, .text-xs {
-    line-height: 1.25;
-} */
-
-/* .btn-trans {
-    background-color: transparent;
-    border-color: transparent;
-    color: #929292;
-} */
-/* 
-.btn-icon {
-    padding-left: 9px;
-    padding-right: 9px;
-} */
-
-/* .btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
-    padding: 5px 10px !important;
-} */
-
-/* .mar-top {
-    margin-top: 15px;
-} */
-/* todo-list {
-    /* margin:; */
-    /* margin-top: 75px;
-    margin-right: 40px;
-  } */ 
-  /* input.new-item:focus {
-    outline: none;
-  } */
-
-  /* list  */
-  .list-group-item > button.delete,
-  .list-group-item > button.complete {
-    float: right;
-    height: 25px;
-    margin-left: 5px;
-  }
   .edit {
     width: 100%;
     height: 80%;
   }  
   
-  #list{
-      /* padding-right: 50%; */
-      
-  }
+  
   #list2{
     height: 50%;
   }
@@ -243,61 +129,20 @@
 
   } 
 
-  #newTodo{
-    float: left;
-    height: 60px;
-    width: 60%;
-    margin-left: 2px;
-    margin-right:50%;
-    font-family: 'Alegreya', serif;
-    font-size: medium;
-   
 
-  }
-   .btn-info{
- 
-     margin-right: 0%;
-   }
-   #todo-form{
-     float: left;
-     
-   }
-   /* .todo-container{
-    float: left;
- 
-    width: 95%;
-    margin-left: 2px;
-    margin-right:50%;
-    background-color: burlywood;
 
-   } */
 
    #cards{
    
     width: 80%;
     height: 100%;
     margin-left: 2%; 
+    padding: 0%;
   
 }
 
 
-/* .col-md-2, .col-md-10{
-    padding:0;
-} */
-/* .panel{
-    margin-bottom: 0px;
-} */
-/* .chat-window{
-    bottom:0;
-	right:0;
-    position:fixed;
-    float:right;
 
-}
-.chat-window > div > .panel{
-    border-radius: 5px 5px 0 0;
-} */
-/* this is for the chat */
 .icon_minim{
     padding:2px 10px;
 }
@@ -315,122 +160,8 @@
   position: relative;
   overflow: hidden;
 }
-/* .msg_receive{
-    padding-left:0;
-    margin-left:0;
-} */
-/* .msg_sent{
-    padding-bottom:20px !important;
-    margin-right:0;
-} */
-/* .messages {
-  background: white;
-  padding: 10px;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  max-width:100%;
-} */
-/* .messages > p {
-    font-size: 13px;
-    margin: 0 0 0.2rem 0;
-  } */
-/* .messages > time {
-    font-size: 11px;
-    color: #ccc;
-} */
-/* .msg_container {
-    padding: 10px;
-    overflow: hidden;
-    display: flex;
-} */
-/* .chatimg {
-    display: block;
-    width: 100%;
-} */
-/* .avatar {
-    position: relative;
-} */
-/* .base_receive > .avatar:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border: 5px solid #FFF;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-} */
 
-/* .base_sent {
-  justify-content: flex-end;
-  align-items: flex-end;
-} */
-/* .base_sent > .avatar:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 5px solid white;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    box-shadow: 1px 1px 2px rgba(black, 0.2); // not quite perfect but close
-} */
-
-/* .msg_sent > time{
-    float: right;
-} */
-
-
-
-/* .msg_container_base::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
-} */
-
-/* .msg_container_base::-webkit-scrollbar
-{
-    width: 12px;
-    background-color: #F5F5F5;
-} */
-
-/* .msg_container_base::-webkit-scrollbar-thumb
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;
-} */
-
-/* .btn-group.dropup{
-    position:fixed;
-    left:0px;
-    bottom:0;
-} */
-
-/* .panel-footer {
-    padding: 10px 15px;
-    background-color: #ccace0;
-    border-top: 1px solid #ddd;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-} */
-
-/* #chatbox{
-  padding-right: 1%;
-  padding-top: 8%;
-  padding-left:0%;
-  height: 200px;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  /* background-color: #ccace0; */
-  
-/* }  */
-/* #chat{
-  background-color: #ccace0;
-  
-} */
+ 
 #card1{
   padding-left: 3%;
 }
@@ -441,4 +172,108 @@
       margin-left: 2%;
       margin-right: 0%;
   }
+}
+body{
+    margin-top:20px;
+    background:#ebeef0;
+}
+
+.img-sm {
+    width: 46px;
+    height: 46px;
+}
+
+.panel {
+    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.panel .panel-footer, .panel>:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.panel .panel-heading, .panel>:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-body {
+    padding: 25px 20px;
+}
+
+
+.media-block .media-left {
+    display: block;
+    float: left
+}
+
+.media-block .media-right {
+    float: right
+}
+
+.media-block .media-body {
+    display: block;
+    overflow: hidden;
+    width: auto
+}
+
+.middle .media-left,
+.middle .media-right,
+.middle .media-body {
+    vertical-align: middle
+}
+
+.thumbnail {
+    border-radius: 0;
+    border-color: #e9e9e9
+}
+
+.img.tag-sm, .btn-group-sm>.img {
+    padding: 5px 10px;
+}
+
+.img:not(.label) {
+    background-color: #fff;
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #cdd6e1;
+    font-size: 12px;
+    line-height: 1.42857;
+    vertical-align: middle;
+    -webkit-transition: all .15s;
+    transition: all .15s;
+}
+.text-muted, a.text-muted:hover, a.text-muted:focus {
+    color: #acacac;
+}
+.text-sm {
+    font-size: 0.9em;
+}
+.text-5x, .text-4x, .text-5x, .text-2x, .text-lg, .text-sm, .text-xs {
+    line-height: 1.25;
+}
+
+.btn-trans {
+    background-color: transparent;
+    border-color: transparent;
+    color: #929292;
+}
+
+.btn-icon {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
+    padding: 5px 10px !important;
+}
+.btn-group {
+      padding: 5px 10px !important;
+}
+
+.mar-top {
+    margin-top: 15px;
 }
