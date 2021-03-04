@@ -28,7 +28,7 @@ a:hover {
   color: #bb9d3b;
 }
 
-/*---------------------------------------------*/
+
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
@@ -147,17 +147,17 @@ iframe {
 
 .wrap-login100 {
   width: 100%;
-<<<<<<< HEAD
+
   background: rgba(4, 3, 41, 0);
   border-radius: 10px;
   overflow: hidden;
-=======
+
   margin-top: 3vw;
   
 position: absolute;
 top: 3px;
 right: 14px;
->>>>>>> a366e1568df7a76f588cd49c96ec196124fdfbdd
+
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -165,22 +165,11 @@ right: 14px;
   display: -ms-flexbox;
  
   justify-content: space-between;
-<<<<<<< HEAD
+
   /* padding: 177px 130px 33px 95px; */
 }
-
-/*------------------------------------------------------------------
-[  ]*/
-.login100-pic {
-  width: 316px;
-}
-
-.login100-pic img {
-  max-width: 110%;
-=======
  
->>>>>>> a366e1568df7a76f588cd49c96ec196124fdfbdd
-}
+ 
 
 .login100-form {
 	width: 24%;
