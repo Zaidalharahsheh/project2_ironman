@@ -1,3 +1,4 @@
+require('./comment');
 module.exports = (sequelize, DataTypes) => {
   const Todo = sequelize.define('Todo', {
     text: {
@@ -17,6 +18,16 @@ module.exports = (sequelize, DataTypes) => {
     userId: {
       type: DataTypes.INTEGER,
     },
+    commentId: {
+      type: DataTypes.INTEGER
+    }
   });
+
+  // Todo.hasMany(comment, { as:'Comment'});
+//Todo.associate = function (models) {
+ //console.log(models); 
+//  Todo.hasMany(models.comment, {as:'comment'})
+//};
   return Todo;
+
 };
