@@ -28,7 +28,12 @@ module.exports = function (app) {
         res.status(401).json(err);
       });
   });
+//get about
+  app.get("/about", (req, res) => {
 
+    if (req.user)
+      res.sendFile(path.join(__dirname, "../views/layout/main.handlebars"));
+  });;
   // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
@@ -51,15 +56,20 @@ module.exports = function (app) {
   });
   app.get('/api/todos', (req, res) => {
     db.Todo.findAll({}).then((dbTodo) => res.json(dbTodo));
+  require
   });
 
   // DELETE route for deleting todos using the id (req.params.id)
+
   app.get('/api/todos/:id', (req, res) => {
     // We just have to specify which todo we want to destroy with "where"
     db.Todo.findAll({
       where: {
+     
         id: req.params.id,
+      //  commentsId:req.body.commentsId,
       },
+
     }).then((dbTodo) => res.json(dbTodo));
   });
 
@@ -68,11 +78,28 @@ module.exports = function (app) {
     db.Todo.create({
       text: req.body.text,
       complete: req.body.complete,
-      userId: req.body.userId
+      userId: req.body.userId,
+   
     })
       .then((dbTodo) => res.json(dbTodo))
       .catch((err) => res.json(err));
   });
+
+  // coment post 
+  app.post('/api/Comments',(req,res) => {
+
+    db.comments.create({
+      text: req.body.text,
+      userId: req.body.userId,
+      TodoId: req.body.TodoId,
+    })
+      .then((dbcomments) => res.json(dbcomments))
+     
+      .catch((err) => {
+        console.log(">> Error while creating comment: ", err);
+  
+      });
+ });
 
   // DELETE route for deleting todos using the id (req.params.id)
   app.delete('/api/todos/:id', (req, res) => {
@@ -100,5 +127,4 @@ module.exports = function (app) {
       .then((dbTodo) => res.json(dbTodo))
       .catch((err) => res.json(err));
   });
-};
-  // GET route for getting all of the todos
+}
