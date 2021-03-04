@@ -1,14 +1,9 @@
-* 
- 
-  
-  html, body {
-    max-width: 100%;
-
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-size: 25pt;
-   max-height: 100%;
-}
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-size: 24px;
+  }
   
   /* body {
     font-size: 24px;
@@ -17,20 +12,9 @@
     font-family: 'Alegreya', serif;
   } */
   
-   #navbarNavAltMarkup{
+  /* #navbarNavAltMarkup{
       float:right;
-      background-color:#75caeb;
-     
-  } 
-  .container-fluid{
-    background-color:#75caeb;
-    
-
-  }
-  .btn{
-    background-color: skyblue;
-
-  }
+  } */
 
   aside {
     
@@ -43,24 +27,21 @@
   float: right;
 }
  #box{
-    height: 210px;
-    width: 300px;
-    margin-top: 15px;
-  
-    
-    text-align:center ;
-    text-decoration-line: underline;
+    height: 300px;
+    margin-top: 30px;
+    background-color: rgb(233, 231, 230);
+    color: tomato;
   
  }
  #hd{
-  background-color:#75caeb;
-  color:white;
+  background-color: rgb(233, 231, 230);
+  color: rgb(8, 6, 6);
   font-family: 'Alegreya', serif;
-  font: size 20pt;
+  font-size:x-large;
  }
   #list-action{
     font-family: 'Alegreya', serif;
-    color:blue 
+    color: rgb(94, 29, 19);
   }
 
 
@@ -223,7 +204,7 @@ body{
     padding: 25px 20px;
 }
 
-/* 
+
 .media-block .media-left {
     display: block;
     float: left
@@ -285,60 +266,12 @@ body{
     padding-left: 9px;
     padding-right: 9px;
 }
-#nav1
-{
-
-  float: right;
-  color:blue;
-}
 
 .btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
     padding: 5px 10px !important;
 }
- HEAD
 .btn-group {
       padding: 5px 10px !important;
-=======
-
-#nav3{
-  padding-left: 5ch;
-  color:white;
-  text-emphasis-color: ;
-
-
-}
-#nav2{
-  padding-left: 5ch;
-  color:white;
-
-
-}
-
-#nav1{
-  padding-left: 100ch;
-  color:white;
-
-
-}
-.btn-outline-danger{
-  color:white;
-  font-size: 15PT;
-  
-}
-.btn-outline-secondary{
-  color:white;
-  font-size: 15PT;
-  
-}
-.btn-outline-success{
-  color:white;
-  font-size: 15PT;
-  
-}
-.btn-outline-primary{
-  color:white;
-  font-size: 15PT;
-  
 }
 
 .mar-top {
