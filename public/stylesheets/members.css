@@ -1,14 +1,9 @@
-* 
- 
-  
-  html, body {
-    max-width: 100%;
-
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-size: 25pt;
-   max-height: 100%;
-}
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-size: 24px;
+  }
   
   /* body {
     font-size: 24px;
@@ -17,20 +12,9 @@
     font-family: 'Alegreya', serif;
   } */
   
-   #navbarNavAltMarkup{
+  /* #navbarNavAltMarkup{
       float:right;
-      background-color:#75caeb;
-     
-  } 
-  .container-fluid{
-    background-color:#75caeb;
-    
-
-  }
-  .btn{
-    background-color: skyblue;
-
-  }
+  } */
 
   aside {
     
@@ -43,6 +27,7 @@
   float: right;
 }
  #box{
+<<<<<<< HEAD
     height: 210px;
     width: 300px;
     margin-top: -3px;
@@ -50,17 +35,23 @@
     
     text-align:center ;
     text-decoration-line: underline;
+=======
+    height: 300px;
+    margin-top: 30px;
+    background-color: rgb(233, 231, 230);
+    color: tomato;
+>>>>>>> ab37e91a3c47776fa6a24bd914aa4cd4da493cbc
   
  }
  #hd{
-  background-color:#75caeb;
-  color:white;
+  background-color: rgb(233, 231, 230);
+  color: rgb(8, 6, 6);
   font-family: 'Alegreya', serif;
-  font: size 20pt;
+  font-size:x-large;
  }
   #list-action{
     font-family: 'Alegreya', serif;
-    color:blue 
+    color: rgb(94, 29, 19);
   }
 
 
@@ -181,6 +172,10 @@ body{
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ab37e91a3c47776fa6a24bd914aa4cd4da493cbc
 .media-block .media-left {
     display: block;
     float: left
@@ -242,6 +237,7 @@ body{
     padding-left: 9px;
     padding-right: 9px;
 }
+<<<<<<< HEAD
 #nav1
 {
 
@@ -249,12 +245,15 @@ body{
   color:blue;
   /* font-family: 'Shippori Mincho B1', serif; */
 }
+=======
+>>>>>>> ab37e91a3c47776fa6a24bd914aa4cd4da493cbc
 
 .btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
     padding: 5px 10px !important;
 }
 .btn-group {
       padding: 5px 10px !important;
+<<<<<<< HEAD
 }
 #nav3{
   padding-left: 5ch;
@@ -297,6 +296,8 @@ body{
   color:white;
   font-size: 15PT;
   
+=======
+>>>>>>> ab37e91a3c47776fa6a24bd914aa4cd4da493cbc
 }
 
 .mar-top {
