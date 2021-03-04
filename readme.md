@@ -1,1 +1,1 @@
-zaid 12 12
+life is okay
