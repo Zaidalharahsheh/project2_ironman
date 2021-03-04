@@ -1,9 +1,14 @@
-* {
-    box-sizing: border-box;
-  }
-  body{
-    font-size: 24px;
-  }
+* 
+ 
+  
+  html, body {
+    max-width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 25pt;
+   max-height: 100%;
+}
   
   /* body {
     font-size: 24px;
@@ -12,9 +17,20 @@
     font-family: 'Alegreya', serif;
   } */
   
-  /* #navbarNavAltMarkup{
+   #navbarNavAltMarkup{
       float:right;
-  } */
+      background-color:#75caeb;
+     
+  } 
+  .container-fluid{
+    background-color:#75caeb;
+    
+
+  }
+  .btn{
+    background-color: skyblue;
+
+  }
 
   aside {
     
@@ -25,21 +41,24 @@
   }
 
  #box{
-    height: 300px;
-    margin-top: 30px;
-    background-color: rgb(233, 231, 230);
-    color: tomato;
+    height: 210px;
+    width: 300px;
+    margin-top: 15px;
+  
+    
+    text-align:center ;
+    text-decoration-line: underline;
   
  }
  #hd{
-  background-color: rgb(233, 231, 230);
-  color: rgb(8, 6, 6);
+  background-color:#75caeb;
+  color:white;
   font-family: 'Alegreya', serif;
-  font-size:x-large;
+  font: size 20pt;
  }
   #list-action{
     font-family: 'Alegreya', serif;
-    color: rgb(94, 29, 19);
+    color:blue 
   }
 
 
@@ -133,8 +152,8 @@
     font-family: 'Alegreya', serif;
 } */
 
-
-/* .media-block .media-left {
+/* 
+.media-block .media-left {
     display: block;
     float: left
 } */
@@ -279,6 +298,12 @@
     margin-left: 2%; 
   
 }
+#nav1
+{
+
+  float: right;
+  color:blue;
+}
 
 
 /* .col-md-2, .col-md-10{
@@ -314,6 +339,19 @@
   padding: 10px;
   position: relative;
   overflow: hidden;
+}
+
+footer
+ {
+    background-color:#75caeb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+/* footer text color */
+p1{
+  color:white;
 }
 /* .msg_receive{
     padding-left:0;
@@ -433,6 +471,46 @@
 /* } */
 #card1{
   padding-left: 3%;
+}
+#nav3{
+  padding-left: 5ch;
+  color:white;
+  text-emphasis-color: ;
+
+
+}
+#nav2{
+  padding-left: 5ch;
+  color:white;
+
+
+}
+
+#nav1{
+  padding-left: 100ch;
+  color:white;
+
+
+}
+.btn-outline-danger{
+  color:white;
+  font-size: 15PT;
+  
+}
+.btn-outline-secondary{
+  color:white;
+  font-size: 15PT;
+  
+}
+.btn-outline-success{
+  color:white;
+  font-size: 15PT;
+  
+}
+.btn-outline-primary{
+  color:white;
+  font-size: 15PT;
+  
 }
 
 @media only screen and (max-width: 1024px) {
