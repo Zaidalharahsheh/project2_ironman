@@ -39,6 +39,6 @@ module.exports = function (app) {
   app.get("/about",  (req, res) => {
 
     if (req.user)
-      res.sendFile(path.join(__dirname, "../views/layout/main.handlebars"));
+      res.sendFile(path.join(__dirname, "../public/aboutus.html"));
   });
 };
