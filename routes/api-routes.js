@@ -29,11 +29,7 @@ module.exports = function (app) {
       });
   });
 //get about
-  app.get("/about", (req, res) => {
 
-    if (req.user)
-      res.sendFile(path.join(__dirname, "../views/layout/main.handlebars"));
-  });;
   // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
