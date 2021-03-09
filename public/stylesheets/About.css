@@ -3,21 +3,6 @@
 nav{
     margin: 0 !important;
 }
-
-
-body {
- 
-    background-color: rgb(227, 237, 240);
-    font-family: "Shippori Mincho";
-    color: black;
-}
-
-.jumbotron{
-    width: 100bw;
-    padding: 0;
-    margin: 0;
-}
-
 .team{
     text-align: center;
 }
@@ -36,11 +21,10 @@ body {
     border: black;
 
     }
-    .flex div a{
-      display: block;
-    }
+   
   img {
     width:100%;
+   
     }
 
     * {
